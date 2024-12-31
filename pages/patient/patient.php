@@ -76,11 +76,17 @@ if (!isset($_SESSION['role'])) {
                                                                 id="'.$row['id'].'">
                                                                 <i class="fa fa-trash" aria-hidden="true"></i> Remove
                                                             </button>
+                                                            <br>
+                                                            <button class="btn btn-info btn-sm btn-view" data-target="#viewModal' . $row['id'] . '" data-toggle="modal"
+                                                                id="'.$row['id'].'">
+                                                                <i class="fa fa-eye" aria-hidden="true"></i> View
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                     ';
 
                                                 include "edit_modal.php";
+                                                include "view_modal.php";
                                             }
                                             ?>
                                         </tbody>
@@ -110,9 +116,16 @@ include "../footer.php"; ?>
             });
 
             $(".btn-delete").click(function(){
-
                 let id = $(this).attr("id");
+                deleteRecord(id);
+            });
 
+            $(".btn-delete-from-view").click(function(){
+                let id = $(this).attr("id");
+                deleteRecord(id);
+            });
+
+            function deleteRecord(id) {
                 if(confirm("Are you sure to delete?")){
                     $.ajax({
                         url: "patient.php",
@@ -121,16 +134,9 @@ include "../footer.php"; ?>
                         success: function(response){
                             location.reload();
                         }
-                    });//END :: AJAX
-
+                    });
                 }
-
-            })
-
-
-                
-
-
+            }
         });
     </script>
 </body>
