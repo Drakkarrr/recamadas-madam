@@ -71,12 +71,7 @@ if (!isset($_SESSION['role'])) {
                                                             <button class="btn btn-primary btn-sm" data-target="#editModal' . $row['id'] . '" data-toggle="modal">
                                                                 <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
                                                             </button>
-                                                            <br>
-                                                            <button class="btn btn-danger btn-sm btn-delete" data-target="#deleteModal' . $row['id'] . '" data-toggle="modal"
-                                                                id="'.$row['id'].'">
-                                                                <i class="fa fa-trash" aria-hidden="true"></i> Remove
-                                                            </button>
-                                                            <br>
+                                                            <div class="space">&nbsp;</div>
                                                             <button class="btn btn-info btn-sm btn-view" data-target="#viewModal' . $row['id'] . '" data-toggle="modal"
                                                                 id="'.$row['id'].'">
                                                                 <i class="fa fa-eye" aria-hidden="true"></i> View
