@@ -63,7 +63,7 @@
                                                 <th>Prescription</th>
                                                 <th>Frame Brand</th>
                                                 <th>Frame Type</th>
-                                                <th>Qunatity</th>
+                                                <th>Quantity</th>
                                                 <th>Price</th>
                                                 <th style="width: 40px !important;">Action</th>
                                             </tr>

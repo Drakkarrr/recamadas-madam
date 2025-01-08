@@ -186,7 +186,7 @@ if (!isset($_SESSION['role'])) {
                                             <table id="table" class="table table-bordered table-striped">
                                                 <thead>
                                                     <tr>
-                                                        <th>Product Name</th>
+                                                     
                                                         <th>Code</th>
                                                         <th>Lens Type</th>
                                                         <th>Lens Coating</th>
@@ -227,7 +227,7 @@ if (!isset($_SESSION['role'])) {
                                                         $order_id = $row['id'];
                                                         echo '
                                                         <tr>
-                                                            <td>' . $row['name'] . '</td>
+                                                      
                                                             <td>' . $row['code'] . '</td>
                                                             <td>' . $row['lens_type'] . '</td>
                                                             <td>' . $row['lens_coating'] . '</td>
