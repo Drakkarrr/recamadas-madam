@@ -56,7 +56,6 @@
                                     <table id="table" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
-                                                <th>Name</th>
                                                 <th>Code</th>
                                                 <th>Category</th>
                                                 <th>Lens Type</th>
@@ -98,7 +97,6 @@
                                                 }
                                                 echo '
                                                 <tr>
-                                                    <td>'.$row['name'].'</td>
                                                     <td>'.$row['code'].'</td>
                                                     <td>'.$category.'</td>
                                                     <td>'.$row['lens_type'].'</td>

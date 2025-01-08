@@ -11,10 +11,7 @@
 
                         <div class="col-md-12">
 
-                            <div class="form-group">
-                                <label>Name:</label>
-                                <input name="name" class="form-control input-sm" type="text" required=""/>
-                            </div>
+                         
 
                             <div class="form-group">
                                 <label>Code:</label>

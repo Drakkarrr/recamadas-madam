@@ -12,10 +12,10 @@
                         <div class="row">
                             <div class="col-md-12">
 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label>Name:</label>
                                     <input name="a_name" class="form-control input-sm" type="text" required=""/>
-                                </div>
+                                </div> -->
 
                                 <div class="form-group">
                                     <label>Code:</label>
